@@ -1,0 +1,40 @@
+{
+  "name": "anchor",
+  "version": "1.0.0",
+  "description": "typescript framework",
+  "main": "lib/index.js",
+  "types": "lib/index.d.ts",
+  "scripts": {
+    "format": "prettier --write \"src/**/*.ts\" \"lib/**/*.js\"",
+    "lint": "tslint -p tsconfig.json",
+    "build": "tsc --project ./",
+    "prepare" : "npm run build",
+    "prepublishOnly" : "npm test && npm run lint",
+    "preversion" : "npm run lint",
+    "version" : "npm run format && git add -A src",
+    "postversion" : "git push && git push --tags",
+    "dev": "npx nodemon ./index.ts --color"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhandraarevalo/anchor.git"
+  },
+  "keywords": [
+    "node",
+    "framework",
+    "javascript",
+    "typescript"
+  ],
+  "author": "Zhandra Arevalo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhandraarevalo/anchor/issues"
+  },
+  "homepage": "https://github.com/zhandraarevalo/anchor#readme",
+  "devDependencies": {
+    "prettier": "^2.8.1",
+    "tslint": "^6.1.3",
+    "tslint-config-prettier": "^1.18.0",
+    "typescript": "^4.9.4"
+  }
+}
