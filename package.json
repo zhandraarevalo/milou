@@ -1,6 +1,6 @@
 {
-  "name": "anchor",
-  "version": "1.0.0",
+  "name": "milou",
+  "version": "0.0.1",
   "description": "typescript framework",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/zhandraarevalo/anchor.git"
+    "url": "git+https://github.com/zhandraarevalo/milou.git"
   },
   "keywords": [
     "node",
@@ -27,11 +27,11 @@
     "typescript"
   ],
   "author": "Zhandra Arevalo",
-  "license": "ISC",
+  "license": "MIT",
   "bugs": {
-    "url": "https://github.com/zhandraarevalo/anchor/issues"
+    "url": "https://github.com/zhandraarevalo/milou/issues"
   },
-  "homepage": "https://github.com/zhandraarevalo/anchor#readme",
+  "homepage": "https://github.com/zhandraarevalo/milou#readme",
   "devDependencies": {
     "prettier": "^2.8.1",
     "tslint": "^6.1.3",
